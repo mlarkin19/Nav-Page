@@ -1,0 +1,7 @@
+<mat-form-field>
+  <mat-select placeholder="applications">
+    <mat-option (click)="sendChangedId(app.Id)"  *ngFor="let app of apps" [value]="app.Id">
+      {{app.ApplicationName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
